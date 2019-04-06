@@ -9,11 +9,11 @@
 		exit;
 	}
 	
-	$captcha 	= imagecreatefrompng('image.png');
-	$white 		= imagecolorallocate($captcha, 0, 0, 0);
-	$red 		= imagecolorallocate($captcha, mt_rand(0,255), mt_rand(0,255), mt_rand(0,255));
 	$font 		= './Thankfully.ttf';
 	$text 		= "";
+	$captcha 	= imagecreatefrompng('image.png');
+	$shadow 	= imagecolorallocate($captcha, 0, 0, 0);
+	$color 		= imagecolorallocate($captcha, mt_rand(0,255), mt_rand(0,255), mt_rand(0,255));
 	$consonants 	= array('b','c','d','f','g','h','j','k','l','m','n','p','r','s','t','v','w','x','y','z');
 	$vowels 	= array('a','e','i','o','u');
 
@@ -24,8 +24,8 @@
 		
 	$_SESSION['captcha_question'] = $text;
 	$delta = mt_rand(99,130);
-	imagettftext($captcha, 77, 0, 11, $delta, $white, $font, $text);
-	imagettftext($captcha, 77, 0, 20, $delta, $red, $font, $text);
+	imagettftext($captcha, 77, 0, 11, $delta, $shadow, $font, $text);
+	imagettftext($captcha, 77, 0, 20, $delta, $color, $font, $text);
 	imagepng($captcha);
 	imagedestroy($captcha);
 	$text = "";
