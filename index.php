@@ -14,7 +14,7 @@
 	$red 		= imagecolorallocate($captcha, mt_rand(0,255), mt_rand(0,255), mt_rand(0,255));
 	$font 		= './Thankfully.ttf';
 	$text 		= "";
-	$consonants = array('b','c','d','f','g','h','j','k','l','m','n','p','r','s','t','v','w','x','y','z');
+	$consonants 	= array('b','c','d','f','g','h','j','k','l','m','n','p','r','s','t','v','w','x','y','z');
 	$vowels 	= array('a','e','i','o','u');
 
 	for($i=0; $i<=2; $i++){
