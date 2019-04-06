@@ -20,3 +20,9 @@ Like so:
 	}
 	
 And then decide what to do next...
+
+# Font
+
+"Thankfully" by Creatype Studio 
+https://creativemarket.com/creatype
+(They said it's 100% free.)
