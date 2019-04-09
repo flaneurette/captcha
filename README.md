@@ -27,3 +27,5 @@ And then decide what to do next...
 https://creativemarket.com/creatype
 
 (They said it's 100% free.)
+
+Hint: Use another font, and make it even better.... the more randomness, the more annoyed robots.
